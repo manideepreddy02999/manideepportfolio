@@ -26,9 +26,8 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
       <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled ? "bg-background/95 backdrop-blur border-b border-border" : "bg-transparent"
-        }`}
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur border-b border-border" : "bg-transparent"
+          }`}
       >
         <div className="container flex items-center justify-between py-4">
           <div className="text-xl font-bold text-primary">MDR</div>
@@ -210,8 +209,10 @@ export default function Home() {
                 ))}
               </div>
 
-              <Button variant="ghost" className="text-primary hover:bg-primary/10 p-0 h-auto">
-                View Project <ExternalLink className="ml-2 w-4 h-4" />
+              <Button variant="ghost" className="text-primary hover:bg-transparent dark:hover:bg-transparent hover:opacity-80 p-0 h-auto" asChild>
+                <a href="https://github.com/manideepreddytippana" target="_blank" rel="noopener noreferrer">
+                  View Project <ExternalLink className="ml-2 w-4 h-4" />
+                </a>
               </Button>
             </Card>
 
@@ -250,8 +251,10 @@ export default function Home() {
                 ))}
               </div>
 
-              <Button variant="ghost" className="text-primary hover:bg-primary/10 p-0 h-auto">
-                View Project <ExternalLink className="ml-2 w-4 h-4" />
+              <Button variant="ghost" className="text-primary hover:bg-transparent dark:hover:bg-transparent hover:opacity-80 p-0 h-auto" asChild>
+                <a href="https://github.com/manideepreddytippana/BurnVision-AI" target="_blank" rel="noopener noreferrer">
+                  View Project <ExternalLink className="ml-2 w-4 h-4" />
+                </a>
               </Button>
             </Card>
 
@@ -290,8 +293,10 @@ export default function Home() {
                 ))}
               </div>
 
-              <Button variant="ghost" className="text-primary hover:bg-primary/10 p-0 h-auto">
-                View Project <ExternalLink className="ml-2 w-4 h-4" />
+              <Button variant="ghost" className="text-primary hover:bg-transparent dark:hover:bg-transparent hover:opacity-80 p-0 h-auto" asChild>
+                <a href="https://github.com/manideepreddytippana/question-papers-hub" target="_blank" rel="noopener noreferrer">
+                  View Project <ExternalLink className="ml-2 w-4 h-4" />
+                </a>
               </Button>
             </Card>
 
@@ -330,8 +335,10 @@ export default function Home() {
                 ))}
               </div>
 
-              <Button variant="ghost" className="text-primary hover:bg-primary/10 p-0 h-auto">
-                View Project <ExternalLink className="ml-2 w-4 h-4" />
+              <Button variant="ghost" className="text-primary hover:bg-transparent dark:hover:bg-transparent hover:opacity-80 p-0 h-auto" asChild>
+                <a href="https://github.com/manideepreddytippana/Clothing-Recommendation" target="_blank" rel="noopener noreferrer">
+                  View Project <ExternalLink className="ml-2 w-4 h-4" />
+                </a>
               </Button>
             </Card>
           </div>
