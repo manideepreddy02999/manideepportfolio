@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Linkedin, Mail, ChevronRight } from "lucide-react";
+import { ExternalLink, Github, Linkedin, Mail, ChevronRight, Download } from "lucide-react";
 import { useEffect, useState } from "react";
 
 /**
@@ -81,11 +81,15 @@ export default function Home() {
             </p>
 
             <div className="flex gap-4 mb-12">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                View My Work <ChevronRight className="ml-2 w-4 h-4" />
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+                <a href="#projects">
+                  View My Work <ChevronRight className="ml-2 w-4 h-4" />
+                </a>
               </Button>
-              <Button size="lg" variant="outline">
-                Download Resume
+              <Button size="lg" variant="outline" asChild>
+                <a href="/resume.pdf" download>
+                  <Download className="mr-2 w-4 h-4" /> Download Resume
+                </a>
               </Button>
             </div>
 
@@ -93,7 +97,7 @@ export default function Home() {
               <a href="https://linkedin.com/in/tippanamanideepreddy" className="hover:text-primary transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="https://github.com" className="hover:text-primary transition-colors">
+              <a href="https://github.com/manideepreddy02999" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 <Github className="w-6 h-6" />
               </a>
               <a href="mailto:manideepreddytippana@gmail.com" className="hover:text-primary transition-colors">
@@ -489,11 +493,15 @@ export default function Home() {
               I'm always interested in hearing about new projects and opportunities. Feel free to reach out!
             </p>
             <div className="flex gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Get In Touch
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+                <a href="mailto:manideepreddytippana@gmail.com">
+                  Get In Touch
+                </a>
               </Button>
-              <Button size="lg" variant="outline">
-                View Resume
+              <Button size="lg" variant="outline" asChild>
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  View Resume
+                </a>
               </Button>
             </div>
           </div>
@@ -509,7 +517,7 @@ export default function Home() {
               <a href="https://linkedin.com/in/tippanamanideepreddy" className="text-muted-foreground hover:text-primary">
                 LinkedIn
               </a>
-              <a href="https://github.com" className="text-muted-foreground hover:text-primary">
+              <a href="https://github.com/manideepreddy02999" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                 GitHub
               </a>
               <a href="mailto:manideepreddytippana@gmail.com" className="text-muted-foreground hover:text-primary">
