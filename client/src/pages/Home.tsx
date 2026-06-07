@@ -123,7 +123,7 @@ export default function Home() {
                     <h3 className="text-2xl font-bold text-primary">Web Developer Intern</h3>
                     <p className="text-lg text-muted-foreground">Codevocado</p>
                   </div>
-                  <span className="text-sm text-muted-foreground">Sept 2025 – Dec 2025</span>
+                  <span className="text-sm text-muted-foreground">Oct 2025 – Dec 2025</span>
                 </div>
 
                 <p className="text-muted-foreground mb-6">Enterprise Resource Planning (ERP) System</p>
@@ -453,12 +453,14 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="bg-card border-border p-6">
+                <span className="text-sm text-muted-foreground">2020 – 2022</span>
                 <h3 className="font-bold text-primary mb-2">Senior Secondary</h3>
                 <p className="text-muted-foreground mb-2">TSBIE Board</p>
                 <p className="text-foreground">95.7%</p>
               </Card>
 
               <Card className="bg-card border-border p-6">
+                <span className="text-sm text-muted-foreground">2019 – 2020</span>
                 <h3 className="font-bold text-primary mb-2">Secondary</h3>
                 <p className="text-muted-foreground mb-2">SSC Board</p>
                 <p className="text-foreground">9.8/10</p>
